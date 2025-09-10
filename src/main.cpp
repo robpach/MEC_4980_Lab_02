@@ -15,6 +15,6 @@ void loop()
   Serial.print("result: ");
   Serial.print(reading);
   Serial.println(" ");
-  int newreading = map(reading, 400, 2100, 255, 0); //The room read 2000 at ambient light and 430 ish when uncovered
+  int newreading = map(reading, 500, 2150, 255, 0); //The room read 2000 at ambient light and 430 ish when uncovered
   analogWrite(LED_BUILTIN,newreading);
 }
